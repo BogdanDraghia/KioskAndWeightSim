@@ -15,7 +15,9 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"coenraads.bracket-pair-colorizer-2"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
