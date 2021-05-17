@@ -1,0 +1,10 @@
+{
+    "lector":{
+        "response1message":"GoodRead",
+        "response1code":"*123456",
+        "response2message":"NoValid",
+        "response2code":"123456",
+        "response3message":"TriggerOff",
+        "response3code":"None"
+    }
+}
