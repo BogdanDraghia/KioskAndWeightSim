@@ -1,4 +1,3 @@
-import "./App.css";
 import Lector from "./simulator/Lector";
 const App = () => {
   return (
