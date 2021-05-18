@@ -70,7 +70,7 @@ serverLector.listen(1112, () => {
   console.log("lector server started on 1112");
 });
 serverBascula.listen(1235, () => {
-  console.log("lector server started on 1235");
+  console.log("bascula server started on 1235");
 });
 
 module.exports = {
