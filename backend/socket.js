@@ -48,9 +48,12 @@ serverBascula.on("connection", (socket) => {
 });
 
 const writeDataLector = async (data) => {
-  console.log(data);
-  connectedClients[connectedClients.length - 1].write(data.toString(), "ascii");
-  serverLector.emit(data.toString());
+  //console.log(data);
+  // datas = data.toString();
+  let writeto = `{"message":"${data.message}","code":"${data.code}"}`;
+  writeto = writeto.toString();
+  await connectedClients[connectedClients.length - 1].write(writeto);
+  //serverLector.emit(data.toString());
 };
 const LectorState = async () => {
   return stateLector;
