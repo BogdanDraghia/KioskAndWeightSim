@@ -40,6 +40,13 @@ app.post("/lectorwrite", async (req, res) => {
   res.send("Write data succes");
 });
 
+socket.serverLector.listen(1112, () => {
+  console.log("lector server started on 1112");
+});
+socket.serverBascula.listen(1235, () => {
+  console.log("bascula server started on 1235");
+});
+
 server.listen(4001, "0.0.0.0", () => {
   console.log(`Started server on 4001`);
 });

@@ -10,7 +10,7 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
+		"terminal.integrated.defaultProfile.linux": "/bin/bash"
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
@@ -21,10 +21,10 @@
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+ //"forwardPorts": [4001,4000,1112,1112],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	 "postCreateCommand": "/workspaces/simulator-foldername/.devcontainer/script.sh",
+	// "postCreateCommand": "/workspaces/simulator-foldername/.devcontainer/script.sh",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	//"remoteUser": "node"
